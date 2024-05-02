@@ -704,13 +704,13 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: b633f642-83e3-4e87-9a8b-5f2e264a9878
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: CS484Final
+  organizationId: packnel87
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
