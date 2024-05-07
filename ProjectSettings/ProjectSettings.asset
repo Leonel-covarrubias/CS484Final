@@ -706,11 +706,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 43be1f6d-36d2-46a7-acb8-2410b823cf5f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: CS484Final
+  organizationId: chevymoore
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
