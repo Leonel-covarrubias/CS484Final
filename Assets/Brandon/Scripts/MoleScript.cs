@@ -17,6 +17,8 @@ public class MoleScript : MonoBehaviour
     void Start()
     {
         startPosition = transform.position;
+
+        whackamole = WhackaMole.Instance;
     }
 
     public void StartMovement()
