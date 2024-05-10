@@ -5,7 +5,6 @@ using TMPro;
 public class WhackaMole : MonoBehaviour
 {
     public List<MoleScript> moleScripts;
-    private bool test = false;
     private int randomIndex;
     private bool anyMoleDown = false;
 

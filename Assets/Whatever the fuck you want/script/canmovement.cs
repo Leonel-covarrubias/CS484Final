@@ -9,7 +9,6 @@ public class canmovement : MonoBehaviour
     public Vector3 startPoint;
     public Vector3 endPoint;
     public float speed = 1.0f;
-    private float fraction = 0;
     public bool blueCan;
     public bool reverse;
     // Start is called before the first frame update
