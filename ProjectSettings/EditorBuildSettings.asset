@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Brandon/Scenes/yuh.unity
-    guid: c46bde1bed27ded44a0b88af7f179b03
-  - enabled: 1
     path: Assets/Brandon/Scenes/Whack a mole.unity
     guid: 8d70fb0710d3ded46bf3bca2b2e4e493
   - enabled: 1
     path: Assets/Whatever the fuck you want/Can Shooter.unity
     guid: f891d1a58a80dde4aa54a827ff5fe197
+  - enabled: 1
+    path: Assets/Brandon/Scenes/yuh.unity
+    guid: c46bde1bed27ded44a0b88af7f179b03
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f6d7015efd851ff41bffd2986c6e0087, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2b0ab57bb833f0d40aa309be950f3759, type: 2}

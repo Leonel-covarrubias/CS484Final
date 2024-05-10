@@ -42,7 +42,8 @@ public class CanGame : MonoBehaviour
         if(canlist.Count == Score){
             timepassed += Time.deltaTime;
             if(timepassed > postGameTime){
-                SceneManager.LoadScene(0);
+                Debug.Log("Anything here yuh");
+                SceneManager.LoadScene(2);
             }
         }
     }
