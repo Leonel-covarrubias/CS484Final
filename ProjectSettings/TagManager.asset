@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hammer
+  - wall
+  - ball
   layers:
   - Default
   - TransparentFX
