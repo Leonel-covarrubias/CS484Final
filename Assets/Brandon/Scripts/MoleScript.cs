@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class MoleScript : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Speed of movement
-    public float waitTime = 2f; // Time to wait at the top position
+    private float moveSpeed = 1f; // Speed of movement
+    private float waitTime = 3f; // Time to wait at the top position
 
     private float startTime;
     private bool movingUp = false;
@@ -17,8 +17,6 @@ public class MoleScript : MonoBehaviour
     void Start()
     {
         startPosition = transform.position;
-
-        whackamole = WhackaMole.Instance;
     }
 
     public void StartMovement()
@@ -44,12 +42,12 @@ public class MoleScript : MonoBehaviour
     // Move the object up
     void MoveUp()
     {
-        float journeyLength = 3f; // Distance to move up
+        float journeyLength = 0.1f; // Distance to move up
         float distCovered = (Time.time - startTime) * moveSpeed;
         float fractionOfJourney = distCovered / journeyLength;
 
         // Move up
-        transform.position = Vector3.Lerp(startPosition, startPosition + Vector3.up * 5f, fractionOfJourney);
+        transform.position = Vector3.Lerp(startPosition, startPosition + Vector3.up * 0.115f, fractionOfJourney);
         if (fractionOfJourney >= 1f)
         {
             startTime = Time.time;
@@ -64,10 +62,10 @@ public class MoleScript : MonoBehaviour
         if (Time.time - startTime >= waitTime)
         {
             // Move down
-            float reverseJourneyLength = 5f; // Distance to move down
+            float reverseJourneyLength = 0.1f; // Distance to move down
             float reverseDistCovered = (Time.time - startTime - waitTime) * moveSpeed;
             float fractionOfReverseJourney = reverseDistCovered / reverseJourneyLength;
-            transform.position = Vector3.Lerp(startPosition + Vector3.up * 5f, startPosition, fractionOfReverseJourney);
+            transform.position = Vector3.Lerp(startPosition + Vector3.up * 0.115f, startPosition, fractionOfReverseJourney);
             if (fractionOfReverseJourney >= 1f)
             {
                 // Reset position and start moving up again

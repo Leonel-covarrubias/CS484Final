@@ -40,7 +40,6 @@ public class canmovement : MonoBehaviour
         if (other.CompareTag("wall"))
         {
             reverse = !reverse; // Toggle direction on hitting a wall
-            Debug.Log("wall hit");
         }
         if (other.CompareTag("ball"))
         {

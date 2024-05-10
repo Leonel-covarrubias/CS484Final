@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
+using TMPro;
 public class WhackaMole : MonoBehaviour
 {
     public List<MoleScript> moleScripts;
@@ -11,6 +11,7 @@ public class WhackaMole : MonoBehaviour
 
     public int playerPoints = 0;
 
+    public TMP_Text score;
     public static WhackaMole Instance;
 
     void Start()
@@ -19,6 +20,9 @@ public class WhackaMole : MonoBehaviour
         StartCoroutine(RandomMoleMovementCoroutine());
     }
 
+    void Update(){
+        score.text = playerPoints.ToString();
+    }
     // Coroutine to call StartRandomMoleMovement every 3 seconds
     IEnumerator RandomMoleMovementCoroutine()
     {

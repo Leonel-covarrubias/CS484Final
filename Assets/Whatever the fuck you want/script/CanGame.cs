@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CanGame : MonoBehaviour
 {
     public int Score = 0;
@@ -37,10 +37,14 @@ public class CanGame : MonoBehaviour
             foreach(GameObject t in fireworks){
                 t.gameObject.SetActive(true);
             }
+            
+        }
+        if(canlist.Count == Score){
             timepassed += Time.deltaTime;
-            // if(timepassed > postGameTime){
-                
-            // }
+            if(timepassed > postGameTime){
+                Debug.Log("Anything here yuh");
+                SceneManager.LoadScene(2);
+            }
         }
     }
     
