@@ -10,12 +10,10 @@ public class Bobber : MonoBehaviour
     private Rigidbody rb;
     private Vector3 targetPosition;
 
-    Player player;
+    public Fishing fishing;
 
     void Start()
     {
-        player = Player.Instance;
-
         rb = GetComponent<Rigidbody>();
         targetPosition = transform.position;
     }
@@ -44,17 +42,20 @@ public class Bobber : MonoBehaviour
     {
         if (other.CompareTag("Fish"))
         {
+            Debug.Log("Hit fish");
             Fish fish = other.GetComponent<Fish>();
 
             if (fish.goldenFish)
             {
-                player.score += 20;
+                fishing.score += 20;
             }
 
             else
             {
-                player.score += 10;
+                fishing.score += 10;
             }
+
+            other.gameObject.SetActive(false);
         }
     }
 }

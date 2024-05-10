@@ -11,7 +11,7 @@ public class WhackaMole : MonoBehaviour
 
     public int playerPoints = 0;
 
-    public static WhackaMole instance;
+    public static WhackaMole Instance;
 
     void Start()
     {
